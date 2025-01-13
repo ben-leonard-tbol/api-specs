@@ -192,6 +192,7 @@
       "get": {
         "operationId": "GetAccount",
         "summary": "Get Account",
+        "deprecated": true,
         "description": "Retrieves the details of a specific bank account. The consumer application needs permissions to read the requested account.\n\n### Example request:\n\n```\nGET /accounts/GB-040075-12345678\n```\n\n### Example response:\n```JSON\n{\n  \"id\": \"GB-040075-12345678\",\n  \"createdDateTime\": \"2022-01-30T08:30:00Z\",\n  \"currency\": \"GBP\",\n  \"balances\": {\n    \"available\": 1000,\n    \"current\":  2000\n  },\n  \"totals\": {\n    \"totalMonthlyCreditInterestAccrued\": 0,\n    \"totalCreditInterestPaid\": 0,\n    \"totalCreditsCurrentMonth\": 0,\n    \"totalDebitsCurrentMonth\": 0\n  },\n  \"accountHolderName\": \"John Smith\",\n  \"nickname\": \"Business Transactions\",\n  \"status\": {\n    \"identifier\": \"ACTIVE\"\n  },\n  \"countryCode\": \"GB\",\n  \"identifiers\": {\n    {...}\n  },\n  \"type\": \"OPERATING\",\n  \"lockType\": \"NONE\",\n  \"limits\": {\n    \"minimumLimit\": 0\n  },\n  \"constraints\": {\n    \"withdrawal\": {\n      \"nominatedPayees\": [\n        {\n          \"accountNumber\": \"00000001\",\n          \"name\": \"Company LTD.\",\n          \"sortCode\": \"042974\"\n        }\n      ],\n      \"noticePeriod\": {\n        \"duration\": 3,\n        \"unitOfTime\": \"WEEK\"\n      }\n    }\n  },\n  \"accountOwner\": {\n    \"type\": \"INDIVIDUAL\",\n    \"id\": \"kPRkRLVrOYGasouzr4hz8\"\n  }\n}\n```",
         "parameters": [
           {
