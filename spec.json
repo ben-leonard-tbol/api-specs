@@ -10,6 +10,10 @@
       "url": "/"
     }
   ],
+  "x-tagGroups": [
+    {
+      "name": "Accounts",
+      "tags": ["v1-accounts", "v2-accounts"]
   "tags": [
     {
       "name": "Accounts"
@@ -258,7 +262,7 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "tags": ["Accounts"]
+        "tags": ["v1-accounts"]
       },
       "patch": {
         "operationId": "UpdateAccount",
